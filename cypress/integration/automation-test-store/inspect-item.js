@@ -7,7 +7,6 @@ describe("Inspect Automation Test store items using chain of commands", () => {
       
     });
 
-
     it("Click on the first item using item text", () => {
         cy.visit("https://automationteststore.com/")
         cy.get('.prdocutname').contains('Skinsheen Bronzer Stick').click()
