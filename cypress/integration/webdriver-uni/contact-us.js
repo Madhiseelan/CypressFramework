@@ -9,8 +9,8 @@ describe("Test Contact Us from Via WebDriverUni", () => {
         cy.title().should('include', 'WebDriver | Contact Us')
         cy.url().should('include', '/Contact-Us/contactus.html')
 
-        cy.get('[name="first_name"]').type("Madhi")  
-        cy.get('[name="last_name"]').type("Seelan")
+        cy.get('[name="first_name"]').type("MadhiSeelan")  
+        cy.get('[name="last_name"]').type("Ponnusamy")
         cy.get('[name="email"]').type("spmadhiponnusamy@gmmal.com")
         cy.get('textarea.feedback-input').type("Test Feedback description - Enter Anything")
         cy.get('[type="submit"]').click()
